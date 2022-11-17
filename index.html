@@ -1,881 +1,163 @@
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
-<head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-56G6JZ3');</script>
-	<!-- End Google Tag Manager -->
-	<meta charset="utf-8">
-	<title>How to Redirect a Web Page in HTML</title>
-	<meta name="description"
-	      content="The meta tag with the http-equiv parameter set to Refresh is used to redirect a web page in HTML. Take a look at how you should do it. Practice with examples.">
-	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="apple-touch-icon" href="/images/logos/192.png">
-	<meta name="theme-color" content="#42444e">
-	<link rel="shortcut icon" href="/favicon.ico" />
-
-			<link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito&display=optional"
-		      as="style">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=optional">
-
-		<link rel="preload"
-		      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=optional"
-		      as="style">
-		<link rel="stylesheet"
-		      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=optional">
-	
-			<link rel="preload" href="/build/images/logo-color-w3.png" as="image">
-	
-		
-				<link rel="canonical" href="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html" />
-	
-	<meta property="og:url"
-	      content="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html" />
-
-		<link rel="alternate" href="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html" hreflang="en" />
-
-							<link rel="alternate" href="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html" hreflang="x-default" />
-					<link rel="alternate" href="https://de.w3docs.com/snippets/html/wie-man-eine-webseite-im-html-umadressiert.html" hreflang="de" />
-
-					<link rel="alternate" href="https://fr.w3docs.com/snippets/html/comment-rediriger-une-page-web-en-html.html" hreflang="fr" />
-
-					
-		<meta property="og:type" content="article" />
-	<meta property="og:title" content="How to Redirect a Web Page in HTML" />
-	<meta property="og:description"
-	      content="The meta tag with the http-equiv parameter set to Refresh is used to redirect a web page in HTML. Take a look at how you should do it. Practice with examples." />
-	<meta property="og:image"
-	      content="https://www.w3docs.com/uploads/media/snippet_gallery/0001/03/98089e73817c93769922be5ae95f955fbba822f3.png" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@w3docs" />
-	<meta name="twitter:title"
-	      content="How to Redirect a Web Page in HTML" />
-	<meta name="twitter:description"
-	      content="The meta tag with the http-equiv parameter set to Refresh is used to redirect a web page in HTML. Take a look at how you should do it. Practice with examples." />
-	<meta name="twitter:image"
-	      content="		https://www.w3docs.com/uploads/media/snippet_gallery/0001/03/98089e73817c93769922be5ae95f955fbba822f3.png
-	" />
-
-				<link rel="stylesheet" href="/build/css/tailwind.7d1ea6c3.css">
-	
-	<style></style>
-
-				<script src="/build/runtime.9051a942.js" defer></script><script src="/build/app.7c6aed06.js" defer></script>
-	
-																																							<script src="/build/js/feedback.f6068c6c.js" defer></script>
-
-	</head>
+<!----------------------------------- index.html of wppi-energy ----------------------------------->
+<html lang="en" dir="ltr">
+  <head>
+    <title>WPPI Energy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56G6JZ3"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="font-nunito">
-	<div class="fixed w-full h-16 bg-blue-steel text-white flex justify-center z-50 border-b border-gray-700 print:hidden">
-		<header class="container flex justify-between max-w-6xl items-center px-4"><a aria-label="logo" href="/"><img src="/build/images/logo-color-w3.png" alt="w3docs logo" width="146" height="41"  /></a><form role="search" action="/search" target="_top"><div><input
-						class="bg-blue-steel text-white border-solid border-0 border-b border-white outline-0 focus:ring-0 px-2 py-1"
-						type="search"
-						name="q"
-						required
-						aria-label="search input"
-						placeholder="Search"
-						value=""
-				/><button type="submit" aria-label="search button"></button></div></form><div class="hidden navbar lg:block"><nav><ul class="hidden md:flex md:gap-8 items-center"><li><div class="dropdown"><button class="dropbtn flex items-center hover:text-blue-500">
-								Books
-							</button><div class="dropdown-content bg-blue-steel text-white"><a href="/learn-html.html">
-										Learn HTML
-									</a><a href="/learn-css.html">
-										Learn CSS
-									</a><a href="/learn-git.html">
-										Learn Git
-									</a><a href="/learn-javascript.html">
-										Learn Javascript
-									</a><a href="/learn-php.html">
-										Learn PHP
-									</a></div></div></li><li><div class="dropdown"><button class="dropbtn flex items-center hover:text-blue-500">
-								Exercises
-							</button><div class="dropdown-content bg-blue-steel text-white"><a href="/exercise/html">
-										HTML
-									</a><a href="/exercise/javascript">
-										JavaScript
-									</a><a href="/exercise/git">
-										Git
-									</a><a href="/exercise/css">
-										CSS
-									</a><a href="/exercise/php">
-										PHP
-									</a></div></div></li><li><a href="/course" aria-current="page"
-						   class="nav-link text-decoration-none hover:text-blue-500 nuxt-link-exact-active nuxt-link-active"
-						>
-							Courses
-						</a></li><li><a href="/quiz/" class="hover:text-blue-500">Quizzes</a></li><li><a href="/snippets" class="hover:text-blue-500">Snippets</a></li><li><a href="/tool/" class="hover:text-blue-500">Tools</a></li></ul></nav></div></header>
-	</div>
+  <h1 style="text-align:left;color:green">Cellardoor</h1>
+<!--------------------------- shingles menu of wppi-energy.bauska.org ----------------------------->
 
-				<div class="hidden xl:block fixed bg-blue-steel text-white w-60 pt-16 h-full z-10 overflow-auto">
-			<div class="fixed h-full overflow-y-auto px-4 pb-36 pt-4">
-					<nav class="snippet-left-menu">
-		        <ul class="w-52">
-            
-                            <li class="first">        <span class="inline-block pt-9 mb-2 text-lg border-b-2 border-blue-curious font-bold">Books</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/learn-html.html">Learn HTML</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-css.html">Learn CSS</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-git.html">Learn Git</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-javascript.html">Learn Javascript</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/learn-php.html">Learn PHP</a>        
-    </li>
-
-
+<div id="container">
+<ul id="menu">
+  <li><a href="#">Cognos Analytics v11.1.x</a>
+    <ul>
+<!--      <li><a href="" target="_blank" rel="noopener noreferrer"> </a></li> -->
+<!--      <li><a href="" target="_blank" rel="noopener noreferrer"> </a></li> -->
+      <li><a href="#ca-whatsnew">What's New?</a></li>
+      <li><a href="#ca-getting-started">Getting Started</a></li>
+      <li><a href="#ca-dash-and-stories">Dashboards & Stories</a></li>
+      <li><a href="#ca-explorations">Explorations</a></li>
+      <li><a href="#ca-reports">Reports/a></li>
+      <li><a href="#ca-metadata">Metadata Modeling Guidelines</a></li>
     </ul>
-
-    </li>
-
-    
-                            <li class="last">        <span class="inline-block pt-9 mb-2 text-lg border-b-2 border-blue-curious font-bold">How To</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/snippets/nodejs.html">How To NodeJs</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/linux.html">How To Linux</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/angularjs.html">How To AngularJs</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/php.html">How To PHP</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/html.html">How To HTML</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/css.html">How To CSS</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/symfony.html">How To Symfony</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/google-maps.html">How To Google Maps</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/git.html">How To Git</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/apache.html">How To Apache</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/javascript.html">How To JavaScript</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/java.html">How To Java</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/snippets/vue-js.html">How To Vue.js</a>        
-    </li>
-
-
+  </li>
+  <li><a href="#">Data Modules</a>
+    <ul>
+      <li><a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">Nu HTML Checker</a></li>
+      <li><a href="https://myibm.ibm.com/dashboard/" target="_blank" rel="noopener noreferrer">IBM Dashboard</a></li>
+      <li><a href="#data-modules">Data Modules</a></li>
+      <li><a href="#ca-framework">Framework Manager</a></li>
+      <li><a href="#ca-dynamic-cubes">Dynamic Cubes</a></li>
+      <li><a href="#ca-report">Report</a></li>
+      <li><a href="#ca-story">Story</a></li>
+      <li><a href="#ca-manage">Manage</a></li>
     </ul>
-
-    </li>
-
-
+  </li>
+  <li><a href="">Reports</a>
+    <ul>
+      <li><a href="#tutorials">Tutorials</a>
+      <li><a href="#sort-group">Sort/Group</a></li>
+      <li><a href="#diagram">Diagram & Visualize</a></li>
+    </ul>  
+  </li>
+  <li><a href="">Managing, Admin and Security</a>
+    <ul>
+      <li><a href="#managing">Managing</a></li>
+      <li><a href="#admin">Administration</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="https://www.makeuseof.com/best-websites-for-hiring-online/" target="_blank" rel="noopener noreferrer">online Job Search</a></li>
     </ul>
-
-	</nav>
-			</div>
-		</div>
-	
-	<div class="xl:ml-60 pt-16 min-h-screen">
-
-		<div class="grid grid-cols-12 gap-4">
-			<div class="col-span-12 md:col-span-9 scroll-pt-16">
-					<div class="print:text-black print:bg-white">
-						<div class="p-4 lg:p-8">
-				
-		<div class="text-center my-2 print:hidden" style="max-width: 728px;">
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- Top Chapter -->
-			<ins class="adsbygoogle top-ad-horizontal"
-			     style="display:inline-block"
-			     data-ad-client="ca-pub-1328390942002432"
-			     data-ad-slot="5595814444"></ins>
-			<script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
-
-		<ol itemscope itemtype="https://schema.org/BreadcrumbList" class="flex gap-2 my-4">
-	<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-		<a itemtype="https://schema.org/Thing"
-		   itemprop="item" href="/snippets" class="text-blue-600">
-			<span itemprop="name">Snippets</span></a>
-		<meta itemprop="position" content="1" />
-	</li>
-	<li>›</li>
-	<li itemprop="itemListElement" itemscope
-	    itemtype="https://schema.org/ListItem">
-		<a itemprop="item"
-		   href="/snippets/html.html" class="text-blue-600">
-			<span itemprop="name">HTML</span></a>
-		<meta itemprop="position" content="2" />
-	</li>
-	<li>›</li>
-	<li itemprop="itemListElement" itemscope
-	    itemtype="https://schema.org/ListItem">
-		<a itemprop="item"
-		   href="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html"
-		   class="text-gray-800"
-		>
-			<span itemprop="name">How to Redirect a Web Page in HTML</span></a>
-		<meta itemprop="position" content="3" />
-	</li>
-</ol>
-
-
-		<div class="prose lg:prose-lg max-w-none">
-			<h1 class="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl mt-6 md:mt-8 lg:mt-12 mb-1 lg:mb-2 xl:mb-4 text-gray-800 font-poppins font-bold">How to Redirect a Web Page in HTML</h1>
-
-			
-			<div class="snippet-container">
-															
-	
-	<p>To tell search engines and website visitors that your web page has permanently moved to a new location with an equivalent content use a 301 redirect.  The code “301” is interpreted as “moved permanently”.  (Learn more about <a href="/learn-html/http-status-messages.html">HTTP Status Codes</a>).</p>
-
-
-			<p><div class="alert alert-info">
-<a  id="cta-course-7" href="https://www.w3docs.com/course/css-the-complete-guide-2020-incl-flexbox-grid-sass" style="text-decoration: none;  display: flex; align-items: center;" class="cta-course" target="_blanck">
-<img
-  alt="Watch a course"
-  src="/images/svg/youtube.svg"
-  width="20"
-  height="20"
- style="margin-right: 16px; margin-bottom: 0;  margin-top: 0"
-/>
-<span class="hidden md:block">Watch a video course </span> &nbsp; <strong>CSS - The Complete Guide (incl. Flexbox, Grid & Sass)</strong>
-</a>
-</div></p>
-	
-
-
-
-
-																				
-	
-	<h2 id="how-to-redirect-to-another-url-2" class="scroll-mt-20">How to redirect to another URL</h2>
-
-
-
-
-
-
-																				
-	
-	<p>The simplest way to redirect to another URL is to use an <a href="/learn-html/html-meta-tag.html">HTML &lt;meta&gt;</a> tag with the http-equiv parameter set to “refresh”. The <span class="attribute">content</span> attribute sets the delay before the browser redirects the user to the new web page. To redirect immediately, set this parameter to “0” seconds for the <span class="attribute">content</span> attribute.</p>
-
-
-
-
-
-
-																				
-	
-	<div class="relative mb-5" itemscope itemtype="https://schema.org/Code">
-		<meta itemprop="name" content="Example of how to redirect a web page in HTML with HTML meta  tag" />
-		<div itemprop="text"><pre class="not-prose text-sm text-white" style="max-height: 550px; background-color:  #011627; word-break: break-word;
-    word-wrap: break-word; padding: 0 6px; font-size: 0.9rem"><code class="hljs css">&lt;meta http-equiv=&quot;Refresh&quot; content=&quot;0; url=&#x27;https://www.w3docs.com&#x27;&quot; /&gt;</code></pre></div>
-
-		
-			</div>
-
-
-
-			<p><!--
-<amp-ad class="hide-xsm"
-        width="100vw" height=320
-        type="adsense"
-        data-ad-client="ca-pub-1328390942002432"
-        data-ad-slot="9944850238"
-        data-auto-format="rspv"
-        data-full-width>
-    <div overflow></div>
-</amp-ad>
---></p>
-	
-
-
-
-
-																				
-	
-	<p>If you want your redirection to occur in an exact time, just specify your preferred parameter (in seconds) for the <span class="attribute">content</span>. Let’s consider an example, where we set "7" seconds as redirection time.</p>
-
-
-
-
-
-
-																				
-	
-	<div class="alert alert-warning">Some browsers don't render the &lt;meta&gt; refresh tag correctly, so before the next page loads, the user can see a flash as a page.</div>
-
-
-
-
-
-
-																				
-	
-	<div class="relative mb-5" itemscope itemtype="https://schema.org/Code">
-		<meta itemprop="name" content="Example of how to redirect a web page in HTML  in an exact time" />
-		<div itemprop="text"><pre class="not-prose text-sm text-white" style="max-height: 550px; background-color:  #011627; word-break: break-word;
-    word-wrap: break-word; padding: 0 6px; font-size: 0.9rem"><code class="hljs css">&lt;meta http-equiv=&quot;refresh&quot; content=&quot;7; url=&#x27;https://www.w3docs.com&#x27;&quot; /&gt;</code></pre></div>
-
-		
-			</div>
-
-
-
-
-
-
-
-																				
-	
-	<p>Some old browsers don't refresh correctly when you add a quick link.  In that case, you can add an <a href="/learn-html/html-a-tag.html">anchor</a> link to let the user follow.</p>
-
-
-
-
-
-
-																				
-	
-	<h3 id="example-of-redirecting-a-web-page-9" class="scroll-mt-20">Example of redirecting a web page:</h3>
-
-
-
-
-
-
-																				
-	
-	<div class="relative mb-5" itemscope itemtype="https://schema.org/Code">
-		<meta itemprop="name" content="Example of how to redirect a web page in HTML" />
-		<div itemprop="text"><pre class="not-prose text-sm text-white" style="max-height: 550px; background-color:  #011627; word-break: break-word;
-    word-wrap: break-word; padding: 0 6px; font-size: 0.9rem"><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;refresh&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;7; url=&#x27;https://www.w3docs.com&#x27;&quot;</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please follow <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.w3docs.com&quot;</span>&gt;</span>this link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
-
-					<div class="text-right -mt-4">
-				<a
-						href="/tools/code-editor/1878"
-						target="_blank"
-						class="btn btn-green"
-						itemprop="url">
-					Try it Yourself &raquo;
-				</a>
-			</div>
-		
-			</div>
-
-
-
-
-
-
-
-																				
-	
-	<p>Learn more about redirecting web pages with <a href="/snippets/javascript/how-to-redirect-a-web-page-with-javascript.html">JavaScript</a>, <a href="/snippets/php/how-to-redirect-a-web-page-with-php.html">PHP</a>, <a href="/snippets/apache/how-to-redirect-a-web-page-with-apache.html">Apache</a> and <a href="/snippets/nodejs/how-to-redirect-a-web-page-with-node-js.html">Node.js</a>.</p>
-
-
-
-
-
-
-												</div>
-		</div>
-
-					<div class="tags print:hidden pt-5 my-5 border-t">
-									<a href="/snippets-tags/html" class="tag">html</a>
-									<a href="/snippets-tags/link" class="tag">link</a>
-									<a href="/snippets-tags/redirect" class="tag">redirect</a>
-							</div>
-		
-		<div>
-							<div class="flex gap-6">
- <div class="hidden md:block">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328390942002432"
-     crossorigin="anonymous"></script>
-<!-- Snippet bottom -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-1328390942002432"
-     data-ad-slot="1441002000"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
- </script>
+  </li>
+    </ul>  
+  </li>
+  <li><a href="">Contact Me</a></li>
+</ul>
 </div>
-<div>
-<a href="https://trade.ataix.com/secux#prices" target="_blank" class="cta cta-secux">
- <img  src="/uploads/media/default/0001/05/e298211cf228421ea0749672243148fac6c95929.jpeg" width="336" height="280" alt="secux" />
-</a>
-</div> 
-</div>
-					</div>
-
-				<div class="prose lg:prose-lg max-w-none">
-			<div class="related-resources"><h3>Related Resources</h3><ul><li><a href="https://www.w3docs.com/snippets/javascript/how-to-redirect-a-web-page-with-javascript.html">
-							How to Redirect a Web Page with JavaScript
-						</a></li><li><a href="https://www.w3docs.com/snippets/php/how-to-redirect-a-web-page-with-php.html">
-							How to Redirect a Web Page with PHP
-						</a></li><li><a href="https://www.w3docs.com/snippets/nodejs/how-to-redirect-a-web-page-with-node-js.html">
-							How to Redirect a Web Page with Node.js
-						</a></li><li><a href="https://www.w3docs.com/snippets/apache/how-to-redirect-a-web-page-with-apache.html">
-							How to Redirect a Web Page with Apache
-						</a></li></ul></div>		</div>
-
-		<div class="flex justify-center print:hidden">
-	<div class="mt-5 border border-gray-300 rounded-lg text-center lg:w-2/3">
-		<div id="feedback-form-container" class="hidden p-10 p-md-20">
-			<strong class="text-2xl mb-8">Sorry about that</strong>
-			<input type="hidden" name="path" value="/feedback/vote-no/58/3" />
-			<input type="hidden" name="token"  value="6Le8frkUAAAAAGo4hSFtQEzgbMVM0KdMNM8M7EKr" />
-			<div class="text-left">
-				<label class="mb-2" for="feedback-message">How can we improve it?</label>
-				<textarea id="feedback-message" name="message" required class="h-32 p-2 w-full"></textarea>
-				<div class="mt-2">
-					<input class="btn btn-blue" type="submit" value="Submit" />
-				</div>
-			</div>
-
-			<div class="hidden success-container">
-				<h4 class="p-5 mb-8">Thanks for your feedback!</h4>
-			</div>
-		</div>
-
-		<div id="feedback-message-thanks" class="hidden py-16 text-2xl">
-			Thanks for your feedback!
-		</div>
-
-		<div id="feedback-action-container" class="p-8">
-			<div class="mb-8 block text-2xl">Do you find this helpful?</div>
-			<div>
-				<button
-						id="feedback-positive-btn"
-						class="btn btn-outline">
-					Yes
-				</button>
-				<button
-						id="feedback-negative-btn"
-						class="btn btn-outline">
-					No
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<script async src="https://www.google.com/recaptcha/api.js?render=6Le8frkUAAAAAGo4hSFtQEzgbMVM0KdMNM8M7EKr"></script>
-
-	</div>
-				</div>
-			</div>
-
-										<div class="col-span-3 hidden md:block pl-2 pt-8 border-l border-gray-200">
-						<!-- aside start -->
-			<div><div style="min-height: 600px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328390942002432"
-     crossorigin="anonymous"></script><!-- Right Side 1 --><ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1328390942002432"
-     data-ad-slot="1048956047"
-     data-ad-format="vertical"
-     ></ins><script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div><div class=" relative py-5 text-center" style="height:100%"><div class="quizzes-new" id="aside-quiz-block" style="margin: 20px auto; max-width: 200px;"><a class="how-to" href="https://www.w3docs.com/quiz/" style="display: block;
-text-align: center;
-font-weight: 500;
-font-size: 18px;
-line-height: 160%;
-color: #ffffff;
-background: #202131;
-padding: 10px 20px;
-font-family: Poppins, sans-serif;
-font-style: normal;"
->
-  Quizzes
-  </a><div class="list" style="padding: 10px 0;   background: #F3F3F3;    display: flex;  align-items:center;   flex-direction: column;    gap: 10px;"><a href="https://www.w3docs.com/quiz-start/html-basic">
-      HTML Basic
-      </a><a href="https://www.w3docs.com/quiz-start/angular"  >     
-      Angular  Basic
-      </a><a href="https://www.w3docs.com/quiz-start/react"  >
-      React Basic
-      </a><a href="https://www.w3docs.com/quiz-start/git"  >
-      Git Basic
-      </a><a href="https://www.w3docs.com/quiz-start/css-basic">         
-      CSS Basic
-      </a><a href="https://www.w3docs.com/quiz-start/javascript-basic"  >         
-      JavaScript Basic
-      </a><a href="https://www.w3docs.com/quiz-start/ts-quiz"  >        
-      TypeScript Basic
-      </a><a href="https://www.w3docs.com/quiz-start/es6-basic" >         
-      ES6 Basic
-      </a><a href="https://www.w3docs.com/quiz-start/vuejs" >
-      Vue.js Basic
-      </a><a href="https://www.w3docs.com/quiz-start/php-basic" >         
-      PHP Basic
-      </a></div></div></div></div><div style="position: sticky;  top: 100px;  margin-bottom: 35px;"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1328390942002432"
-     crossorigin="anonymous"></script><!-- Content Sticky --><ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1328390942002432"
-     data-ad-slot="8443800953"
-     data-ad-format="vertical"
-     ></ins><script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>		<!-- aside end -->
-				</div>
-					</div>
-
-					<div class="bg-blue-steel text-white print:hidden">
-				<footer>
-	<div class="p-6 inline-block lg:pl-20 w-full lg:w-11/12">
-
-		<div class="pb-4">
-			        <ul class="flex flex-wrap justify-start sm:justify-evenly gap-12 md:gap-16">
-            
-                            <li class="first">        <span class="text-blue-500 mb-4 block text-lg">Quizzes</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/quiz-start/html-basic">HTML Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/css-basic">CSS Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/javascript-basic">Javascript Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/php-basic">PHP basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/es6-basic">ES6 Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/ts-quiz">TypeScript Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/angular">Angular  Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/react">React  Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/sass">Sass  Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/vuejs">Vue.js  Basic</a>        
-    </li>
-
-    
-                <li>        <a href="/quiz-start/git">Git  Basic</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/quiz-start/sql">SQL  Basic</a>        
-    </li>
-
-
-    </ul>
-
-    </li>
-
-    
-                            <li>        <span class="text-blue-500 mb-4 block text-lg">Snippets</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/snippets/nodejs.html">How To NodeJs</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/linux.html">How To Linux</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/angularjs.html">How To AngularJs</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/php.html">How To PHP</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/html.html">How To HTML</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/css.html">How To CSS</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/symfony.html">How To Symfony</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/google-maps.html">How To Google Maps</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/git.html">How To Git</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/apache.html">How To Apache</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/javascript.html">How To JavaScript</a>        
-    </li>
-
-    
-                <li>        <a href="/snippets/java.html">How To Java</a>        
-    </li>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<!----------------------------------- documentaries websites ------------------------------------->
+
+<hr>
+<!---------------------------------------- bored websites ---------------------------------------->
+<h3 id="bored">When you get bored from CS related stuff</h3>
+<ul class="list-styles2">
+  <li><a href="https://www.youtube.com/user/barcroftmedia/featured" target="_blank">Barcroft TV : Daily short documentaries about the incredible variety of people that make up the world.</a><br></li>
+  <li><a href="https://www.youtube.com/user/bigthink/videos" target="_blank">Big Think : Expert driven, actionable, educational content, featuring experts ranging from Bill Clinton to Bill Nye (deutsch-bag).</a><br></li>
+  <li><a href="https://www.youtube.com/user/coldfustion/videos" target="_blank">ColdFusion : Past, present, and future of technology.</a><br></li>
+  <li><a href="https://www.youtube.com/user/crashcourse/videos" target="_blank">CrashCourse : small courses on various subjects.</a><br></li>
+  <li><a href="https://www.youtube.com/user/everyframeapainting/videos" target="_blank">Every Frame a Painting : High-quality analysis of films and filmmaking.</a><br></li>
+  <li><a href="https://www.youtube.com/user/NationalGeographic/videos" target="_blank">National Geographic : High volume of high-quality content from all over the world.</a><br></li>
+  <li><a href="https://www.reddit.com/r/ProgrammerHumor/" target="_blank">r/ProgrammerHumor : Subreddit dedicated to exactly what it sounds like.</a><br></li>
+  <li><a href="https://www.reddit.com" target="_blank">Reddit the front page of the internet : Where free time goes to die.</a><br></li>
+  <li><a href="https://www.youtube.com/user/VineMontanaTV/videos" target="_blank">Ridddle : A youtube channel about science, mainly, but not only, the universe and space.</a><br></li>
+  <li><a href="https://regexcrossword.com" target="_blank">Regex Crossword : A simple crossword game where clues are regex that must be matched.</a><br></li>
+  <li><a href="https://www.youtube.com/user/scishow/videos" target="_blank">SciShow : Answers to interesting questions that you've always wondered about.</a><br></li>
+  <li><a href="https://www.youtube.com/user/destinws2/videos" target="_blank">SmarterEveryDay : Lots of amazing scientific information about the world around us, usually captured with a high-speed camera.</a><br></li>
+  <li><a href="https://www.youtube.com/user/TEDtalksDirector/videos" target="_blank">TED : Great talks about technology, entertainment, and design.</a><br></li>
+  <li><a href="https://www.youtube.com/user/TestTubeNetwork/videos" target="_blank">TestTube News : Interesting information about news from around the world.</a><br></li>
+  <li><a href="http://www.bbc.com/future/story/20170601-the-secret-to-a-long-and-healthy-life-eat-less" target="_blank">How to live for a long time ? : The secret of longevity.</a><br></li>
+  <li><a href="https://www.youtube.com/user/Vsauce/videos" target="_blank">Vsauce : The best youtube channel.</a><br></li>
+  <li><a href="http://www.ox.ac.uk/research/research-in-conversation/how-live-happy-life/dr-bronwyn-tarr#" target="_blank">Ox A cuk : How to live a happy life.</a><br></li>
+  <li><a href="https://www.lonelyspeck.com/the-milky-way-in-los-angeles-light-pollution/" target="_blank">lonelyspeck : Expose to the Right for Astrophotography in Light Pollution – Palos Verdes, Los Angeles, California.</a></li>
+</ul>
+
+<hr>
+<!-------------------------------------- end bored websites -------------------------------------->
+<!--------------------------------- watch others code websites ----------------------------------->
+<h3 id="dev-blogs">Watch others code</h3>
+
+<ul class="list-styles2">
+  <li><a href="https://www.education-ecosystem.com" target="_blank">Education Ecosystem : screencast of people building applications, websites, games, etc.</a></li>
+  <li><a href="https://www.twitch.tv/directory/game/Science%20%26%20Technology" target="_blank">Twitch.tv : The programming community of twitch.</a></li>
+</ul>
+
+<hr>
+<!------------------------------------- end video-tutorials -------------------------------------->
+<!----------------------------- bash and shell scripting websites -------------------------------->
+<h3 id="bash-and-shell-scripting">Bash and Shell scripting</h3>
+
+<ul class="list-styles">
+  <li><a href="http://tldp.org/LDP/abs/html/" target="_blank" rel="noopener noreferrer">Advanced Bash-Scripting Guide : An in-depth exploration of the art of shell scripting.</a></li>
+  <li><a href="http://www.tldp.org/LDP/Bash-Beginners-Guide/html/" target="_blank" rel="noopener noreferrer">Bash Guide for Beginners : Bash Guide for Beginners Machtelt Garrels.</a></li>
+  <li><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" target="_blank" rel="noopener noreferrer">Bash Programming : by Mike G mikkey at dynamo.com.ar.</a></li>
+  <li><a href="https://www.gnu.org/software/bash/manual/bashref.html" target="_blank" rel="noopener noreferrer">Bash Reference Manual : Bash Reference Manual.</a></li>
+  <li><a href="http://mywiki.wooledge.org/BashGuide" target="_blank" rel="noopener noreferrer">BashGuide : BashGuide - Greg's Wiki.</a></li>
+  <li><a href="http://conqueringthecommandline.com/book/frontmatter" target="_blank" rel="noopener noreferrer">Conquering the Command Line : Unix and Linux Commands for Developers.</a></li>
+  <li><a href="https://www.airbornos.com" target="_blank" rel="noopener noreferrer">Airbon OS :  Private Google Docs Alternative.</a></li>
+  <li><a href="https://www.commandlinefu.com/commands/browse" target="_blank" rel="noopener noreferrer">Commandlinefu : An extensive collection of Shell oneliners that can save your day on many occasions.</a></li>
+</ul>
+
+<hr>
+
+
+<!----------------------------------- web development tools -------------------------------------->
+<h3 id="webtools">Web Development Tools</h3>
+
+<ul class="list-styles2">
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server" target="_blank" rel="noopener noreferrer">How to Set Up a Local Test Server</a></li>
+  <li><a href="https://www.checkbot.io/" target="_blank" rel="noopener noreferrer"><em>Check Bot</em></a></li>
+  <li><a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">Front End Roadmap</a></li>
+  <li><a href="https://free-for.dev/#/?id=cdn-and-protection" target="_blank" rel="noopener noreferrer">Free for Dev</a></li>
+  <li><a href="https://www.makeuseof.com/best-websites-for-hiring-online/" target="_blank" rel="noopener noreferrer">Online Job Search</a></li>
+  <li><a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">CSS Bootstrap Framework</a></li>
+  <li><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener noreferrer">CSS Bootstrap GitHub</a></li>
+  <li><a href="https://tailwindcss.com/#gh-light-mode-only" target="_blank" rel="noopener noreferrer"><em>CSS Tailwind Light</em></a></li>
+  <li><a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener noreferrer"><em>CSS Tailwind on CSS GitHub</em></a></li>
+</ul>
+
+<hr>
+<!--------------------------------- end web development tools ------------------------------------>
+<h4>W3 How To CSS/HTML/JavaScript <a href="https://www.w3docs.com/snippets/html/how-to-redirect-a-web-page-in-html.html" target="_blank" rel="noopener noreferrer"> click here</a>.</h4>
+
+<h4>W3 Docs <a href="https://www.w3docs.com" target="_blank" rel="noopener noreferrer">this link</a>.</h4>
+
+<hr>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- when you get stuck ------------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="when-you-get-stuck">When you get stuck</h3>
+
+<ul class="list-styles">
+  <li><a href="https://www.codementor.io" target="_blank" rel="noopener noreferrer">Codementor : A mentorship community to learn from fellow developers via live 1:1 help and more.</a></li>
+  <li><a href="https://www.devrant.io" target="_blank" rel="noopener noreferrer">devRant : Community where you can rant and release your stress</a></li>
+  <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google : A search engine for anything you get stuck with.</a></li>
+  <li><a href="https://learn-anything.xyz" target="_blank" rel="noopener noreferrer">Learn Anything : Community curated knowledge graph of best paths for learning anything</a></li>
+  <li><a href="https://www.quora.com" target="_blank" rel="noopener noreferrer">Quora : A place to share knowledge and better understand the world</a></li>
+  <li><a href="https://stackoverflow.com" target="_blank rel="noopener noreferrer"">Stack Overflow : subscribe to their weekly newsletter and any other topic which you find interesting</a></li>
+</ul>
+
+
+<hr>
+
+      </div>
+   </body>
 
-    
-                <li class="last">        <a href="/snippets/vue-js.html">How To Vue.js</a>        
-    </li>
-
-
-    </ul>
-
-    </li>
-
-    
-                            <li>        <span class="text-blue-500 mb-4 block text-lg">Our Books</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/learn-html.html">Learn HTML</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-css.html">Learn CSS</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-git.html">Learn Git</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-javascript.html">Learn Javascript</a>        
-    </li>
-
-    
-                <li>        <a href="/learn-php.html">Learn PHP</a>        
-    </li>
-
-    
-                <li>        <span class="text-blue-500 mb-3 mt-5 block text-lg">Exercises</span>        
-    </li>
-
-    
-                <li>        <a href="/exercise/html">HTML</a>        
-    </li>
-
-    
-                <li>        <a href="/exercise/javascript">JavaScript</a>        
-    </li>
-
-    
-                <li>        <a href="/exercise/git">Git</a>        
-    </li>
-
-    
-                <li>        <a href="/exercise/css">CSS</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/exercise/php">PHP</a>        
-    </li>
-
-
-    </ul>
-
-    </li>
-
-    
-                            <li>        <span class="text-blue-500 mb-4 block text-lg">Our Tools</span>                <ul class="flex flex-col gap-1.5 menu_level_1">
-            
-                <li class="first">        <a href="/keyboard">Typing Test</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/color-picker">Color Picker</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/html-encoder/">HTML Encoder</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/editor">HTML Editor</a>        
-    </li>
-
-    
-                <li>        <a href="/css3-maker/border-radius">CSS Maker</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/password-generator">Password Generator</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/image-base64">Base 64</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/tools/code-diff/">Code Diff</a>        
-    </li>
-
-
-    </ul>
-
-    </li>
-
-    
-                            <li class="last">        <span class="text-blue-500 mb-4 block text-lg">String Functions</span>                <ul class="flex flex-col gap-2 menu_level_1">
-            
-                <li class="first">        <a href="/tools/string-length-calculator">String Length Calculator</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-md5-generator">String to MD5 Hash Generator</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-sha256-generator">String to Sha256 Hash Generator</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-revers">String Reverse</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-url-encoder">URL Encoder</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-url-decoder">URL Decoder</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-base64-encoder">Base 64 Encoder</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-base64-decoder">Base 64 Decoder</a>        
-    </li>
-
-    
-                <li>        <a href="/tools/string-remove-extra-spaces">Extra Spaces Remover</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/tools/string-convert-lowercase">String to Lowercase Converter</a>        
-    </li>
-
-
-    </ul>
-
-    </li>
-
-
-    </ul>
-
-		</div>
-
-		<div class="py-8 border-t border-gray-700 flex gap-4 flex-col md:flex-row items-center md:justify-between">
-			<div>
-				        <ul class="flex gap-4">
-            
-                <li class="first">        <a href="/about-us">About Us</a>        
-    </li>
-
-    
-                <li class="last">        <a href="/privacy-policy">Privacy Policy for W3Docs</a>        
-    </li>
-
-
-    </ul>
-
-			</div>
-
-			<a href="/" aria-label="w3docs homepage">
-				<img src="/build/images/footer-logo.png"
-				     alt="logo"
-				     width="111"
-				     height="30" />
-
-			</a>
-
-			<div>
-				<strong>Follow Us</strong>
-				<a id="follows-fb" href="https://www.facebook.com/w3docs" target="_blank"
-				   aria-label="follow on facebook" rel="noopener"></a>
-
-				<a id="follows-tt" href="https://twitter.com/w3docs" target="_blank"
-				   aria-label="follow on twitter"
-				   rel="noopener"></a>
-			</div>
-
-		</div>
-		<div class="pt-8 text-center border-t border-gray-700">
-			<small>Company &copy; W3docs. All rights reserved.</small>
-		</div>
-	</div>
-</footer>
-
-			</div>
-			</div>
-
-</div>
-</body>
 </html>
